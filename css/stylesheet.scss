@@ -13,8 +13,11 @@ p {
 }
 label {
   font-family: 'Cabin', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: #9b9b9b;
+  @media(min-width: 768px) {
+    font-size: 15px;
+  }
 }
 input {
   font-family: 'Cabin', sans-serif;
@@ -22,6 +25,10 @@ input {
   border-bottom: solid 1px #979797 !important;
   border-radius: 0 !important;
   color: #cccccc !important;
+  font-size: 17px !important;
+  @media(min-width: 768px) {
+    font-size: 18px !important;
+  }
 }
 textarea {
   font-family: 'Cabin', sans-serif;
@@ -29,6 +36,10 @@ textarea {
   border-bottom: solid 1px #979797 !important;
   border-radius: 0 !important;
   color: #cccccc !important;
+  font-size: 17px;
+  @media(min-width: 768px) {
+    font-size: 18px;
+  }
 }
 .dim {
   color: #9b9b9b;
@@ -42,15 +53,38 @@ button {
   color: #ffffff;
 }
 nav {
+  .mobile-logo {
+    position: absolute;
+    left: 5%;
+    width: 30%;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .navbar-toggler {
+    float: right;
+    color: #4a4a4a;
+  }
+  @media(max-width: 768px) {
+    background-color: red;
+    width: 100%;
+    padding: 0 !important;
+  }
   #nav {
     .nav {
       padding: 5px 50px;
+      @media(max-width: 768px) {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
       .contact-button {
-        background-color: #02a6d9;
-        border-radius: 100px;
-        padding: 0 29px;
-        a {
-        color: #ffffff !important;
+        @media(min-width: 768px) {
+          border-radius: 100px;
+          background-color: #02a6d9;
+          padding: 0 29px;
+          a {
+            color: #ffffff !important;
+          }
         }
       }
       .nav-item {
@@ -58,20 +92,64 @@ nav {
           font-size: 14px;
           color: #4a4a4a;
         }
+        @media(max-width: 768px) {
+          width: 100%;
+          margin: 0;
+          border: solid 1px #efefef;
+        }
       }
     }
   }
 }
 #intro {
   position: relative;
-  height: 80vh;
+  height: 50vh;
   background-image: linear-gradient(to bottom, #02a6d9, #0272be);
   color: #ffffff;
+  @media(min-width: 768px) {
+    height: 80vh;
+  }
+  h1 {
+    font-size: 24px !important;
+    @media(min-width: 768px) {
+      font-size: 36px !important;
+    }
+  }
+  h2 {
+    font-size: 16px !important;
+    opacity: 0.6;
+    margin-bottom: 32px;
+    @media(min-width: 768px) {
+      font-size: 24px !important;
+    }
+  }
   #intro-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.1;
+  }
+  .intro-icon {
+    position: absolute;
+    width: 7%;
+    height: auto;
+    opacity: 0.2;
+  }
+  .intro-server {
+    top: 10vh;
+    left: 30%;
+  }
+  .intro-security {
+    top: 10vh;
+    left: 75%;
+  }
+  .intro-telecom {
+    left: 21%;
+    bottom: 12vh;
+  }
+  .intro-services {
+    left: 80%;
+    bottom: 18vh;
   }
   .intro-content {
     position: absolute;
@@ -80,56 +158,146 @@ nav {
   }
 }
 #about {
+  padding: 30px 15px 100px;
   background-color: #f7f7f7;
   @media(min-width: 768px) {
     padding: 80px 225px 120px;
   }
   .col-xs-12 {
-    padding-bottom: 60px;
+    padding-bottom: 0;
+    @media(min-width: 768px) {
+      padding-bottom: 60px;
+    }
   }
   .col-sm-4 {
-    padding: 0 2%;
+    padding: 0 40px;
+    @media(min-width: 768px) {
+      padding: 0 2%;
+    }
     h2 {
       font-size: 16px;
       padding: 2vh 0;
     }
   }
   h1 {
-    margin-bottom: 50px;
+    font-size: 22px !important;
+    margin-bottom: 20px;
+    @media(min-width: 768px) {
+      font-size: 25px !important;
+      margin-bottom: 50px;
+    }
+  }
+  p {
+    font-size: 14px !important;
+    text-align: justify;
+    @media(min-width: 768px) {
+      font-size: 15px !important;
+    }
+  }
+  img {
+    @media(max-width: 768px) {
+      padding-top: 50px;
+    }
   }
 }
 #certifications {
+  padding: 30px 5px 100px;
+  h1 {
+    font-size: 22px;
+    @media(min-width: 768px) {
+      font-size: 25px;
+    }
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 36px;
+    margin-top: 16px;
+    @media(min-width: 768px) {
+      font-size: 15px !important;
+      margin-top: 0;
+    }
+  }
   @media(min-width: 768px) {
     padding: 80px 210px 120px;
   }
 }
 #solutions {
+  padding: 30px 5px 100px;
   background-color: #f7f7f7;
   h1 {
-    font-size: 25px;
-    margin-bottom: 50px;
+    font-size: 22px;
+    margin-bottom: 30px;
+    @media(min-width: 768px) {
+      font-size: 25px !important;
+      margin-bottom: 50px;
+    }
   }
   h2 {
-    font-size: 20px;
+    font-size: 19px;
+    @media(min-width: 768px) {
+      font-size: 20px;
+    }
   }
   h3 {
-    font-size: 15px;
+    font-size: 14px;
     color: #cccccc;
+    @media(min-width: 768px) {
+      font-size: 15px;
+    }
   }
   p {
-    font-size: 15px;
+    font-size: 14px;
+    @media(min-width: 768px) {
+      font-size: 15px;
+    }
   }
   img {
     margin-bottom: 30px;
+  }
+  button {
+    margin-bottom: 50px;
+  }
+  .contact-btn {
+    background-color: #0272be !important;
+  }
+  .row:nth-of-type(1) {
+    @media(min-width: 768px) {
+      border-bottom: solid 1px #efefef;
+    }
+  }
+  .row:nth-of-type(2) {
+    img {
+      @media(min-width: 768px) {
+        margin-top: 50px;
+      }
+    }
+  }
+  .col-sm-4:nth-of-type(2) {
+    @media(min-width: 768px) {
+      border-left: solid 1px #efefef;
+      border-right: solid 1px #efefef;
+    }
+  }
+  .solutions-last {
+    visibility: hidden;
+    display: none;
+    @media(min-width: 768px) {
+      display: block;
+    }
   }
   @media(min-width: 768px) {
     padding: 80px 115px 120px;
   }
 }
 #contact {
+  padding: 30px 5px 100px;
   h1 {
+    font-size: 22px !important;
     color: #4a4a4a !important;
     margin-bottom: 50px;
+    @media(min-width: 768px) {
+      font-size: 25px !important;
+    }
   }
   img {
     padding-right: 15px;
@@ -137,7 +305,8 @@ nav {
   a {
     text-decoration: underline;
   }
-  .col-xs-1, .col-xs-11 {
+  .col-xs-1,
+  .col-xs-11 {
     padding: 0;
   }
   .first {
@@ -148,6 +317,16 @@ nav {
   }
   .contact-info {
     padding-left: 25px;
+    margin-top: 50px;
+    @media(min-width: 768px) {
+      margin-top: 0;
+    }
+    p,
+    a {
+      @media(max-width: 768px) {
+        margin-left: 15px;
+      }
+    }
   }
   @media(min-width: 768px) {
     padding: 80px 205px 120px;

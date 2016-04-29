@@ -1,0 +1,23 @@
+<svg width="12" height="20" xmlns="http://www.w3.org/2000/svg">
+ <!-- Generator: sketchtool 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+ <title>32EE3054-3FC6-40AB-8B22-39B5F0231DC3</title>
+ <desc>Created with sketchtool.</desc>
+ <defs>
+  <linearGradient id="linearGradient-1" y2="100%" x2="50%" y1="0%" x1="50%">
+   <stop offset="0%" stop-color="#02A6D9"/>
+   <stop offset="100%" stop-color="#0272BE"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="22" width="14" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="infrastructureserveur">
+   <g stroke="null" id="svg_4">
+    <polygon stroke="null" points="9.561256408691406,19 1,9.999465942382812 9.561256408691406,1 11,2.513458251953125 3.877490997314453,9.999465942382812 11,17.486541748046875 " fill="url(#linearGradient-1)" id="svg_3"/>
+   </g>
+  </g>
+ </g>
+</svg>

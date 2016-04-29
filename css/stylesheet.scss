@@ -60,6 +60,18 @@ nav {
     height: 100%;
     vertical-align: middle;
   }
+  .solutions-site-logo {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    left: 45%;
+    vertical-align: middle;
+    @media(max-width: 768px) {
+      width: 30%;
+      left: 35%;
+    }
+  }
   .navbar-toggler {
     float: right;
     color: #4a4a4a;
@@ -92,11 +104,30 @@ nav {
           font-size: 14px;
           color: #4a4a4a;
         }
+        .backicon {
+          margin-right: 10px;
+          @media(max-width: 768px) {
+            margin-right: 5px;
+          }
+        }
+        .backlink {
+          font-size: 17px !important;
+          line-height: 1.1;
+          letter-spacing: 0.5px;
+          color: #02a6d9;
+          @media(max-width: 768px) {
+            font-size: 15px !important;
+            float: left;
+          }
+        }
         @media(max-width: 768px) {
           width: 100%;
           margin: 0;
           border: solid 1px #efefef;
         }
+      }
+      .backlink-item {
+        border: 0;
       }
     }
   }
@@ -122,6 +153,9 @@ nav {
     @media(min-width: 768px) {
       font-size: 24px !important;
     }
+  }
+  a {
+    text-decoration: none;
   }
   #intro-overlay {
     position: absolute;
@@ -150,6 +184,50 @@ nav {
   .intro-services {
     left: 80%;
     bottom: 18vh;
+  }
+  .intro-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+#solutions-intro {
+  position: relative;
+  height: 200px;
+  background-image: linear-gradient(to bottom, #02a6d9, #0272be);
+  color: #ffffff;
+  overflow: hidden;
+  @media(min-width: 768px) {
+    height: 200px;
+  }
+  h1 {
+    font-size: 24px !important;
+    @media(min-width: 768px) {
+      font-size: 36px !important;
+    }
+  }
+  h2 {
+    font-size: 12px !important;
+    opacity: 0.6;
+    @media(min-width: 768px) {
+      font-size: 17px !important;
+    }
+  }
+  #intro-overlay {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    opacity: 0.1;
+  }
+  #solutions-intro-icon {
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    @media(max-width: 768px) {
+      display: none;
+    }
   }
   .intro-content {
     position: absolute;
@@ -251,6 +329,9 @@ nav {
       font-size: 15px;
     }
   }
+  a {
+    text-decoration: none;
+  }
   img {
     margin-bottom: 30px;
   }
@@ -289,12 +370,92 @@ nav {
     padding: 80px 115px 120px;
   }
 }
+#solutions-page {
+  background-color: #f7f7f7;
+  h1 {
+    font-size: 15px;
+    font-weight: 700;
+    @media(min-width: 768px) {
+      font-size: 17px;
+    }
+  }
+  h3 {
+    font-size: 15px;
+    @media(min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  p {
+    font-size: 15px;
+    text-align: justify;
+    margin: 30px 0 50px;
+    @media(min-width: 768px) {
+      font-size: 14px;
+    }
+  }
+  hr {
+    width: 50px;
+    height: 2px;
+    background-color: #02a6d9;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .solutions-bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #efefef;
+  }
+  .col-xs-12 {
+    padding: 50px 30px;
+    @media(min-width: 768px) {
+      padding: 0 225px 100px;
+    }
+  }
+  .solutions-page-nav {
+    padding: 30px !important;
+    @media(min-width: 768px) {
+      padding: 80px 225px !important;
+    }
+    .solutions-page-link {
+      width: 160px;
+      height: 55px;
+      background-color: #efefef;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 700;
+      color: #9b9b9b;
+      font-size: 16px;
+      margin-left: 38px;
+      line-height: 1;
+      @media(max-width: 768px) {
+        width: 48%;
+        margin: 0;
+        font-size: 12px;
+        &:nth-of-type(1) {
+          margin-left: 0 !important;
+          margin-right: 2%;
+          margin-bottom: 15px;
+        }
+        &:nth-of-type(2) {
+          margin-bottom: 15px;
+        }
+        &:nth-of-type(3) {
+          margin-right: 2%;
+        }
+      }
+    }
+    .solutions-current {
+      background-color: #02a6d9 !important;
+      color: #ffffff !important;
+    }
+  }
+}
 #contact {
   padding: 30px 5px 100px;
   h1 {
     font-size: 22px !important;
     color: #4a4a4a !important;
-    margin-bottom: 50px;
     @media(min-width: 768px) {
       font-size: 25px !important;
     }
@@ -308,6 +469,9 @@ nav {
   .col-xs-1,
   .col-xs-11 {
     padding: 0;
+  }
+  .col-xs-12 {
+    margin-bottom: 50px;
   }
   .first {
     padding-bottom: 29px;

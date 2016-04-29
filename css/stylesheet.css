@@ -367,6 +367,7 @@ nav #nav .nav {
       @media (max-width: 768px) {
         #solutions-page .solutions-page-nav .solutions-page-link {
           float: left;
+          float: left;
           width: 48%;
           margin: 0;
           font-size: 12px; }

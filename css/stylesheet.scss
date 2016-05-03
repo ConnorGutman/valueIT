@@ -56,6 +56,7 @@ button {
   color: #ffffff;
 }
 nav {
+  background-color: #ffffff !important;
   @media(min-width: 768px) {
     height: 80px;
   }
@@ -165,13 +166,20 @@ nav {
     }
   }
 }
+#top {
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
 #intro {
   position: relative;
   height: 50vh;
   background-image: linear-gradient(to bottom, #02a6d9, #0272be);
   color: #ffffff;
+  margin-top: 50px;
   @media(min-width: 768px) {
     height: 80vh;
+    margin-top: 80px;
   }
   h1 {
     font-size: 24px !important;
@@ -236,8 +244,10 @@ nav {
   background-image: linear-gradient(to bottom, #02a6d9, #0272be);
   color: #ffffff;
   overflow: hidden;
+  margin-top: 50px;
   @media(min-width: 768px) {
     height: 200px;
+    margin-top: 80px;
   }
   h1 {
     font-size: 24px !important;
@@ -318,7 +328,10 @@ nav {
   }
 }
 #certifications {
-  padding: 30px 5px 100px;
+  padding: 30px 5px 25px;
+  @media(min-width: 768px) {
+    padding: 30px 5px 100px;
+  }
   h1 {
     font-size: 22px;
     @media(min-width: 768px) {
@@ -361,8 +374,11 @@ nav {
   }
 }
 #solutions {
-  padding: 30px 5px 100px;
+  padding: 30px 5px 0;
   background-color: #f7f7f7;
+  @media(min-width: 768px) {
+    padding: 30px 5px 100px;
+  }
   h1 {
     font-size: 22px;
     margin-bottom: 30px;
@@ -436,6 +452,11 @@ nav {
   .blank-solution {
     @media(max-width: 768px) {
       border-bottom: 0 !important;
+    }
+  }
+  .email-solution p {
+    @media(max-width: 768px) {
+      padding-top: 50px;
     }
   }
   .solutions-last {
@@ -565,15 +586,52 @@ nav {
     }
   }
   .contact-info {
-    padding-left: 25px;
-    margin-top: 50px;
+    @media(min-width: 768px) {
+      padding-left: 25px;
+      margin-top: 50px;
+    }
+    .first-p-mobile {
+      @media(max-width: 768px) {
+        padding-left: 35px;
+      }
+    }
+    .first-mobile {
+      position: absolute;
+      margin-left: -35px;
+    }
+    p,
+    a {
+      text-align: center;
+      span {
+        display: inline-block;
+      }
+    }
     @media(min-width: 768px) {
       margin-top: 0;
+      p,
+      a {
+        text-align: left;
+        span {
+          display: none;
+        }
+      }
     }
     p,
     a {
       @media(max-width: 768px) {
-        margin-left: 15px;
+        font-size: 14px;
+        //margin-left: 15px;
+      }
+    }
+    .col-xs-12 {
+      @media(max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    .col-sm-11 {
+      margin-bottom: 0 !important;
+      @media(min-width: 768px) {
+        padding-left: 0;
       }
     }
   }

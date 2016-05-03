@@ -437,6 +437,9 @@ nav #nav .nav .backlink-item {
       background-color: #02a6d9 !important;
       color: #ffffff !important; }
 
+.solutions-contact {
+  padding-bottom: 0 !important; }
+
 #contact {
   padding: 30px 5px 100px; }
   #contact h1 {

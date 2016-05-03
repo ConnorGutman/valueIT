@@ -560,7 +560,9 @@ nav {
     padding-bottom: 29px;
   }
   .contact-form {
-    padding-right: 25px;
+    @media(min-width: 768px) {
+      padding-right: 25px;
+    }
   }
   .contact-info {
     padding-left: 25px;

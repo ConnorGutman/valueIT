@@ -465,8 +465,9 @@ nav #nav .nav .backlink-item {
     margin-bottom: 50px; }
   #contact .first {
     padding-bottom: 29px; }
-  #contact .contact-form {
-    padding-right: 25px; }
+  @media (min-width: 768px) {
+    #contact .contact-form {
+      padding-right: 25px; } }
   #contact .contact-info {
     padding-left: 25px;
     margin-top: 50px; }

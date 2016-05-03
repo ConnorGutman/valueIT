@@ -61,9 +61,10 @@ nav {
   }
   .mobile-logo {
     position: absolute;
-    left: 5%;
-    width: 30%;
-    height: 100%;
+    left: 15px;
+    top: 17.5px;
+    width: 87px;
+    height: 15px;
     vertical-align: middle;
   }
   .solutions-site-logo {
@@ -81,6 +82,9 @@ nav {
   .navbar-toggler {
     float: right;
     color: #4a4a4a;
+    @media(max-width: 768px) {
+      padding: 15px 12px;
+    }
   }
   @media(max-width: 768px) {
     background-color: red;
